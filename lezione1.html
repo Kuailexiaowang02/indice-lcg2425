@@ -1,21 +1,140 @@
 <!-- definiamo il nostro esempio -->
 <!DOCTYPE html>
 <head>
-    <title> Indice della Sezione C2 di LCG </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice della Sezione C2 di LCG</title>
+
+    <style>
+        .content-container {
+            max-width: 200px;
+            width: 100%;
+            margin: 0;
+            position: fixed; 
+            top: 100px;
+            left: 20px;
+        }
+
+        /* Stile di base per tutto il corpo della pagina */
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+            background-color: #efebf1;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Stile per il titolo principale */
+        h1 {
+            color: #2c3e50;
+            padding: 15px;
+            font-size: 2em;
+            border-radius: 8px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            width: auto;
+            text-align: left; /* 标题左对齐 */
+        }
+
+        /* Stile per l'elenco */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Stile per ciascun elemento della lista */
+        li {
+            background-color: #2c3e50;
+            color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-size: 1.2em;
+            text-align: left; 
+            max-width: 300px; 
+        }
+
+        /* Stile per il collegamento */
+        a {
+            color: #cfafd0;
+            text-decoration: none;
+        }
+
+        /* Cambio di colore al passaggio del mouse sugli elementi della lista */
+        li:hover {
+            background-color: #464e55;
+        }
+
+        /* 顶部栏的样式 */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .left-content {
+            text-align: left;
+        }
+
+        .right-content {
+            text-align: right;
+        }
+
+        /* 底部栏的样式 */
+        .bottom-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+    </style>
 </head>
 <body>
-    <!-- vorrei rappresentare un indice, con un collegamento a altre pagine html, 
-    questo collegamento che se lo clicko mi porti in una pagina html -->
-    <h1> Indice di informatica applicata C2 </h1>
-    <p> 
-         <ul>
-            <li> sviluppo locale di pagine html </li>
-            <li> Creiamo un <a href="index.html">indice</a> a supporto per il corso </li>
-            <li> Lezione3 </li>
-            <li> Lezione4 </li>
-            <li> Lezione5 </li>
-            <li> Lezione6 </li>
-            
-         </ul>
-    </p>
+    <!-- 顶部栏 -->
+    <div class="top-bar">
+        <span class="left-content">2024/2025</span>
+        <span class="right-content">Siyue Wang</span>
+    </div>
+
+    <!-- 内容容器，包含标题和列表 -->
+    <div class="content-container">
+        <h1>Indice di Informatica Applicata C2</h1>
+        <ul>
+            <li>Lezione1</li>
+            <li>Lezione2</li>
+            <li>Lezione3</li>
+            <li>Lezione4</li>
+            <li>Lezione5</li>
+            <li>Lezione6</li>
+        </ul>
+    </div>
+
+    <!-- 底部栏 -->
+    <div class="bottom-bar">
+        <a href="https://example.com"></a>
+        <span class="right-text">Laboratorio di Computer Grafica</span>
+    </div>
+
 </body>
+</html>
